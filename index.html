@@ -11,29 +11,55 @@
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel='stylesheet'>
 </head>
 <body>
+  <wd-window id='Faction' class='unclosable fullpage'>
+    <section id='choose-faction'>
+      <textrow class='centered'>Choose your flag.</textrow>
+      <section class='flag-container'>
+        <img class='flag' id='Confederate States of America' src='assets/flags/csa.png'></img>
+        <img class='flag' id='United States of America' src='assets/flags/usa.png'></img>
+        <img class='flag' id='Coalition of Freedmen' src='assets/flags/coalition.png'></img>
+        <img class='flag' id='United Mexican States' src='assets/flags/mexico.png'></img>
+        <img class='flag' id='British Empire' src='assets/flags/uk.png'></img>
+        <img class='flag' id='French Empire' src='assets/flags/france.png'></img>
+      </section>
+    </section>
+    <section id='main-faction-window'>
+      <wd-selector id='item-commands'>Commands</wd-selector>
+      <wd-selector id='item-troops'>Troops</wd-selector>
+      <wd-selector id='item-position'>Current Position</wd-selector>
+      <wd-selector id='item-scouts'>Scout Reports</wd-selector>
+    </section>
+  </wd-window>
+
   <wd-window id='Troops' class='closed'>
     <textrow id='infantry-count'>Infantry: 0</textrow>
     <textrow id='cavalry-count'>Cavalry: 0</textrow>
     <textrow id='artillery-count'>Artillery: 0</textrow>
   </wd-window>
+
   <wd-window id='Current Position' class='closed'>
     <textbox id='current-territory'></textbox>
     <textbox id='current-borders'></textbox>
   </wd-window>
+
   <wd-window id='Scout Reports' class='closed'>
     <textbox>We've spotted another army encamped in OREGON: we approximate their numbers at 32 infantry, 2 cavalry, and 6 artillery. They're flying CONFEDERATE colors.</textbox>
   </wd-window>
-  <wd-window id='Commands'>
+
+  <wd-window id='Commands' class='closed'>
     <wd-selector id='item-supply'>SUPPLY</wd-selector>
     <wd-selector id='item-march'>MARCH</wd-selector>
     <wd-selector id='item-attack'>ATTACK</wd-selector>
   </wd-window>
+
   <wd-window id='Attack' class='closed'>
     <textbox>Which adjacent territory do you want to attack?</textbox>
   </wd-window>
+
   <wd-window id='March' class='closed'>
     <textbox>Which empty adjacent territory do you want to march into?</textbox>
   </wd-window>
+
   <wd-window id='Supply' class='closed'>
     <textbox>We've deployed scouts to sweep the territory for volunteers and supplies.</textbox>
   </wd-window>

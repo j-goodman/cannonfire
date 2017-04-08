@@ -24,6 +24,24 @@ textbox {
   white-space: normal;
 }
 
+.flag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flag {
+  border: 2px solid #000;
+  height: auto;
+  padding: 6px;
+  width: 12%;
+}
+
+.flag:hover {
+  border: 2px solid #4b4;
+  cursor: none;
+}
+
 wd-selector {
   color: #4b4;
   display: block;
@@ -36,8 +54,4 @@ wd-selector:hover {
   cursor: none;
   display: block;
   padding: 10px 20px 10px 20px;
-}
-
-item {
-
 }
