@@ -1,0 +1,48 @@
+ia-window {
+  background: #000;
+  border: 2px solid #4b4;
+  display: block;
+  overflow: hidden;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  width: 280px;
+}
+
+bar, close, description, adjuster {
+  color: #4b4;
+  line-height: 20px;
+  text-align: center;
+}
+
+bar {
+  background: #000;
+  border-bottom: 2px solid #4b4;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+close, adjuster {
+  background: #000;
+  border: 2px solid #4b4;
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  margin: 1px;
+  width: 24px;
+}
+
+adjuster {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+description {
+  line-height: 32px;
+  margin-left: 16px;
+}

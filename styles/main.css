@@ -1,0 +1,43 @@
+body {
+  background: #000;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+
+textrow {
+  color: #4b4;
+  display: block;
+  margin: 20px;
+}
+
+textbox {
+  color: #4b4;
+  display: block;
+  line-height: 28px;
+  margin: 20px;
+  white-space: normal;
+}
+
+ia-selector {
+  color: #4b4;
+  display: block;
+  margin: 20px;
+}
+
+ia-selector:hover {
+  background: #4b4;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  margin: 20px;
+}
+
+item {
+
+}

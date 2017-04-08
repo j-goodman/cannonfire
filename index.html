@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8">
+  <!--scripts-->
+  <script src='lib/interAct.js'></script>
+  <script src='lib/map.js'></script>
+  <script src='lib/game.js'></script>
+  <!--styles-->
+  <link rel='stylesheet' href='styles/windows.css'>
+  <link rel='stylesheet' href='styles/main.css'>
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel='stylesheet'>
+</head>
+<body>
+  <ia-window title='Troops'>
+    <textrow id='infantry-count'>Infantry: 0</textrow>
+    <textrow id='cavalry-count'>Cavalry: 0</textrow>
+    <textrow id='artillery-count'>Artillery: 0</textrow>
+  </ia-window>
+  <ia-window title='Current Position'>
+    <textbox id='current-territory'></textbox>
+    <textbox id='current-borders'></textbox>
+  </ia-window>
+  <ia-window title='Scout Reports'>
+    <textbox>We've spotted another army encamped in OREGON: we approximate their numbers at 32 infantry, 2 cavalry, and 6 artillery. They're flying CONFEDERATE colors.</textbox>
+  </ia-window>
+  <ia-window title='Command'>
+    <ia-selector>SUPPLY</ia-selector>
+    <ia-selector>MARCH</ia-selector>
+    <ia-selector>ATTACK</ia-selector>
+  </ia-window>
+</body>
