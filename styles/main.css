@@ -24,18 +24,18 @@ textbox {
   white-space: normal;
 }
 
-ia-selector {
+wd-selector {
   color: #4b4;
   display: block;
-  margin: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
-ia-selector:hover {
+wd-selector:hover {
   background: #4b4;
   color: #000;
-  cursor: pointer;
+  cursor: none;
   display: block;
-  margin: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 item {

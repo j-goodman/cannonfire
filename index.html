@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <!--scripts-->
-  <script src='lib/interAct.js'></script>
+  <script src='lib/windu.js'></script>
   <script src='lib/map.js'></script>
   <script src='lib/game.js'></script>
   <!--styles-->
@@ -11,21 +11,30 @@
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel='stylesheet'>
 </head>
 <body>
-  <ia-window title='Troops'>
+  <wd-window id='Troops' class='closed'>
     <textrow id='infantry-count'>Infantry: 0</textrow>
     <textrow id='cavalry-count'>Cavalry: 0</textrow>
     <textrow id='artillery-count'>Artillery: 0</textrow>
-  </ia-window>
-  <ia-window title='Current Position'>
+  </wd-window>
+  <wd-window id='Current Position' class='closed'>
     <textbox id='current-territory'></textbox>
     <textbox id='current-borders'></textbox>
-  </ia-window>
-  <ia-window title='Scout Reports'>
+  </wd-window>
+  <wd-window id='Scout Reports' class='closed'>
     <textbox>We've spotted another army encamped in OREGON: we approximate their numbers at 32 infantry, 2 cavalry, and 6 artillery. They're flying CONFEDERATE colors.</textbox>
-  </ia-window>
-  <ia-window title='Command'>
-    <ia-selector>SUPPLY</ia-selector>
-    <ia-selector>MARCH</ia-selector>
-    <ia-selector>ATTACK</ia-selector>
-  </ia-window>
+  </wd-window>
+  <wd-window id='Commands'>
+    <wd-selector id='item-supply'>SUPPLY</wd-selector>
+    <wd-selector id='item-march'>MARCH</wd-selector>
+    <wd-selector id='item-attack'>ATTACK</wd-selector>
+  </wd-window>
+  <wd-window id='Attack' class='closed'>
+    <textbox>Which adjacent territory do you want to attack?</textbox>
+  </wd-window>
+  <wd-window id='March' class='closed'>
+    <textbox>Which empty adjacent territory do you want to march into?</textbox>
+  </wd-window>
+  <wd-window id='Supply' class='closed'>
+    <textbox>We've deployed scouts to sweep the territory for volunteers and supplies.</textbox>
+  </wd-window>
 </body>
