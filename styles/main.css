@@ -33,7 +33,7 @@ textbox {
 .flag {
   border: 2px solid #000;
   height: auto;
-  max-height: 18%;
+  max-height: 12%;
   padding: 6px;
   width: 12%;
 }
