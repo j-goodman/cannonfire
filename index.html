@@ -33,9 +33,28 @@
   </wd-window>
 
   <wd-window id='Troops' class='closed'>
-    <textrow id='infantry-count'>Infantry: 0</textrow>
-    <textrow id='cavalry-count'>Cavalry: 0</textrow>
-    <textrow id='artillery-count'>Artillery: 0</textrow>
+    <section id='troops-selector'>
+      <wd-selector id='select-infantry-subwindow'>INFANTRY</wd-selector>
+      <wd-selector id='select-cavalry-subwindow'>CAVALRY</wd-selector>
+      <wd-selector id='select-artillery-subwindow'>ARTILLERY</wd-selector>
+    </section>
+    <section id='troops-infantry'>
+      <textrow id='infantry-formation-display'=>Formation: LINE</textrow>
+      <wd-selector id='select-line'>LINE</wd-selector>
+      <wd-selector id='select-column'>COLUMN</wd-selector>
+      <wd-selector id='select-square'>SQUARE</wd-selector>
+    </section>
+    <section id='troops-cavalry'>
+      <textrow id='cavalry-disposition-display'=>Disposition: DEFENSIVE</textrow>
+      <wd-selector id='select-aggressive'>AGGRESSIVE</wd-selector>
+      <wd-selector id='select-defensive'>DEFENSIVE</wd-selector>
+    </section>
+    <section id='troops-artillery'>
+      <textrow id='artillery-target-display'=>Targeting: INFANTRY</textrow>
+      <wd-selector id='select-infantry-target'>TARGET INFANTRY</wd-selector>
+      <wd-selector id='select-cavalry-target'>TARGET CAVALRY</wd-selector>
+      <wd-selector id='select-artillery-target'>TARGET ARTILLERY</wd-selector>
+    </section>
   </wd-window>
 
   <wd-window id='Current Position' class='closed'>
