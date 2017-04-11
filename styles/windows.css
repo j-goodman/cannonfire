@@ -2,7 +2,7 @@ wd-window {
   background: #000;
   border: 2px solid #4b4;
   display: block;
-  overflow: hidden;
+  overflow: scroll;
   left: 30px;
   position: absolute;
   top: 30px;
