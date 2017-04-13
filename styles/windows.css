@@ -2,14 +2,14 @@ wd-window {
   background: #000;
   border: 2px solid #4b4;
   display: block;
-  overflow: scroll;
+  overflow: hidden;
   left: 30px;
   position: absolute;
   top: 30px;
   width: 280px;
 }
 
-bar, close, description, adjuster {
+bar, close, expand, description, adjuster {
   color: #4b4;
   line-height: 20px;
   text-align: center;
@@ -26,7 +26,7 @@ bar {
   width: 100%;
 }
 
-close, adjuster {
+close, adjuster, expand {
   background: #000;
   border: 2px solid #4b4;
   cursor: pointer;
@@ -36,7 +36,7 @@ close, adjuster {
   width: 24px;
 }
 
-close:hover, adjuster:hover {
+close:hover, adjuster:hover, .highlight {
   background: #4b4;
   border: 2px solid #000;
   color: #000;
