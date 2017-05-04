@@ -1,5 +1,5 @@
 wd-window {
-  background: #000;
+  background: rgba(0, 0, 0, 0.8);
   border: 2px solid #4b4;
   display: block;
   overflow: hidden;
