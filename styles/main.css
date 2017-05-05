@@ -1,8 +1,8 @@
 body {
   background: #000;
-  border: 2px solid #4b4;
-  border-color: #4b4;
-  color: #4b4;
+  border: 2px solid #fff;
+  border-color: #fff;
+  color: #fff;
   font-family: 'Press Start 2P', monospace;
   font-size: 14px;
   white-space: nowrap;
@@ -22,7 +22,7 @@ body {
 }
 
 textrow {
-  color: #4b4;
+  color: inherit;
   display: block;
   margin: 20px;
 }
