@@ -1,6 +1,7 @@
 wd-window {
   background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #4b4;
+  border: 2px solid #fff;
+  border-color: inherit;
   display: block;
   overflow: hidden;
   left: 30px;
@@ -10,14 +11,15 @@ wd-window {
 }
 
 bar, close, expand, description, adjuster {
-  color: #4b4;
+  color: inherit;
   line-height: 20px;
   text-align: center;
 }
 
 bar {
   background: #000;
-  border-bottom: 2px solid #4b4;
+  border-bottom: 2px solid #fff;
+  border-color: inherit;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -28,7 +30,8 @@ bar {
 
 close, adjuster, expand {
   background: #000;
-  border: 2px solid #4b4;
+  border: 2px solid #fff;
+  border-color: inherit;
   cursor: pointer;
   display: block;
   height: 24px;
@@ -37,7 +40,7 @@ close, adjuster, expand {
 }
 
 close:hover, adjuster:hover{
-  background: #4b4;
+  background: #fff;
   border: 2px solid #000;
   color: #000;
 }

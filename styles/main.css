@@ -1,5 +1,8 @@
 body {
   background: #000;
+  border: 2px solid #4b4;
+  border-color: #4b4;
+  color: #4b4;
   font-family: 'Press Start 2P', monospace;
   font-size: 14px;
   white-space: nowrap;
@@ -25,7 +28,7 @@ textrow {
 }
 
 textbox {
-  color: #4b4;
+  color: inherit;
   display: block;
   line-height: 28px;
   margin: 20px;
@@ -34,7 +37,7 @@ textbox {
 
 sidebar {
   align-items: center;
-  border-right: 2px solid #4b4;
+  border-right: inherit;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -47,8 +50,8 @@ sidebar {
 }
 
 icon {
-  /*border: 2px solid #4b4;*/
-  color: #4b4;
+  color: inherit;
+  border-color: inherit;
   display: block;
   font-size: 40px;
   height: 60px;
@@ -63,7 +66,7 @@ icon {
 }
 
 icon:hover {
-  background: #4b4;
+  background: #fff;
   color: #000;
   cursor: pointer;
 }
@@ -83,18 +86,19 @@ icon:hover {
 }
 
 .flag:hover {
-  border: 2px solid #4b4;
+  border: 2px solid #fff;
+  border-color: inherit;
   cursor: none;
 }
 
 wd-selector {
-  color: #4b4;
+  color: inherit;
   display: block;
   padding: 10px 20px 10px 20px;
 }
 
 wd-selector:hover {
-  background: #4b4;
+  background: #fff;
   color: #000;
   cursor: none;
   display: block;
