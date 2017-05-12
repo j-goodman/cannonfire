@@ -1,0 +1,24 @@
+<head>
+  <title>Cannonfire</title>
+  <meta charset="UTF-8">
+  <!--scripts-->
+  <script src='lib/windu.js'></script>
+  <script src='lib/map.js'></script>
+  <script src='lib/general.js'></script>
+  <script src='lib/army.js'></script>
+  <script src='assets/vectorMap.js'></script>
+  <script src='lib/mapDrawer.js'></script>
+  <script src='lib/gameLogic.js'></script>
+  <script src='lib/gameDisplay.js'></script>
+  <!--styles-->
+  <link rel='stylesheet' href='styles/windows.css'>
+  <link rel='stylesheet' href='styles/main.css'>
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel='stylesheet'>
+</head>
+<body>
+  <wd-window id="Game Over">
+    <textbox>Your army has been defeated</textbox>
+    <wd-selector onclick="window.location = './index.html'">Play again?</wd-selector>
+  </wd-window>
+</body>
